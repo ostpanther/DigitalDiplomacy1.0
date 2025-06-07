@@ -1,0 +1,12 @@
+project/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   ├── graph.js
+│   ├── data.js
+│   ├── search.js
+│   └── modal.js
+└── data/
+    └── graph-data.json

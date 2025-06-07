@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая социальная сеть</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Подключение внешнего CSS -->
+</head>
+
+<body>
+    <!-- Боковая панель управления -->
+    <div id="sidebar">
+        <label>Мин. связей: <input type="number" id="minLinks" value="0" min="0" style="width: 50px"></label><br>
+        <label>Поиск: <input type="text" id="search" placeholder="Имя"></label>
+        <div>
+            <label>Год:
+                <select id="yearFilter" multiple style="width: 100%; height: 100px;"></select>
+            </label>
+            <button id="resetFilter" style="margin-top: 5px; width: 100%;">Сбросить фильтр</button>
+        </div>
+        <div id="legend">
+            <p><strong>Легенда:</strong></p>
+            <ul>
+                <li>Размер круга — активность</li>
+                <li>Синие узлы — Персоны</li>
+                <li>Жёлтые узлы — Коллективное авторство</li>
+                <li>Зелёные рёбра — взаимная переписка</li>
+                <li>Фиолетовые рёбра — Петля</li>
+                <li>Красная обводка — выделенный узел/ребро</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Вспомогательные элементы -->
+    <div class="tooltip" id="tooltip" style="opacity:0;"></div>
+
+    <!-- Всплывающее окно узла -->
+    <div id="nodePopup" class="node-popup">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h3 id="popupTitle"></h3>
+        <div id="popupContent"></div>
+    </div>
+
+    <!-- Поисковая панель -->
+    <div id="searchContainer">
+        <h3>Интеллектуальный поиск</h3>
+        <input type="text" id="fullTextSearch"
+            placeholder="Введите фразу для поиска (например, 'Русско-турецкая война')">
+        <div id="searchResultsContainer"></div>
+    </div>
+
+    <!-- SVG-граф -->
+    <svg>
+        <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#ff6b00" />
+            </marker>
+            <marker id="arrow-bid" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#2abd28" />
+            </marker>
+            <marker id="loop-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+                orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#cf5ff5" />
+            </marker>
+            <filter id="loop-glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+        </defs>
+        <g class="zoom-group"></g>
+    </svg>
+
+    <!-- Модальное окно письма -->
+    <div id="letterModal" class="letter-modal">
+        <div class="letter-modal-content">
+            <div class="letter-modal-header">
+                <h3 id="letterModalTitle" class="letter-modal-title"></h3>
+                <button class="letter-modal-close" onclick="closeLetterModal()">×</button>
+            </div>
+            <div class="letter-modal-container">
+                <div class="letter-modal-text-container">
+                    <div id="letterModalText" class="letter-modal-text"></div>
+                </div>
+                <div id="letterMetaInfo" class="letter-meta-container">
+                    <div class="letter-meta-title">Метаинформация</div>
+                    <div id="letterMetaContent"></div>
+                </div>
+            </div>
+            <div class="letter-modal-footer">
+                <button class="letter-modal-button" onclick="closeLetterModal()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем библиотеки и JS -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

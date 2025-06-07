@@ -1,0 +1,45 @@
+Рукопись не обнаружена
+АВПР | Архив внешней политики России  
+КИД | Коллегия иностранных дел  
+МИД | Министерство иностранных дел  
+РАК | Российско-американская компания  
+ЦГАДА | Центральный государственный архив древних актов  
+ЦГАВМФ СССР | Центральный государственный архив Военно-Морского Флота СССР  
+ЦГАЛИ СССР | Центральный государственный архив литературы и искусства СССР  
+ЦГАОР СССР | Центральный государственный архив Октябрьской революции  
+ЦГВИА СССР | Центральный государственный военно-исторический архив СССР  
+ЦГИА СССР | Центральный государственный исторический архив СССР  
+ЦГИА ЭстССР | Центральный государственный исторический архив Эстонской ССР  
+ГА Архангельской обл. | Государственный архив Архангельской области  
+ГА Костромской обл. | Государственный архив Костромской области  
+ГА Красноярского края | Государственный архив Красноярского края  
+Архив ЛО АН СССР | Архив Ленинградского отделения Академии наук СССР  
+Архив ЛОИИ АН СССР | Архив Ленинградского отделения Института истории АН СССР  
+РО НРЛИ АН СССР | Рукописный отдел Института русской литературы АН СССР  
+ОР ГБЛ | Отдел рукописей Государственной библиотеки им. В. И. Ленина  
+APS | American Philosophical Society (Philadelphia)  
+BU JCBL | Brown University, John Carter Brown Library  
+BU JHL | Brown University, John Hay Library  
+CU | Columbia University  
+DU PL | Duke University, Perkins Library  
+EL | Essex Institute (Salem, Mass.)  
+GC | Girard College  
+HU BL | Harvard University, Baker Library  
+SU HI | Stanford University, Hoover Institution  
+LCM | Library of Congress, Manuscript Division  
+LCRB | Library of Congress, Rare Book Room  
+MdHS | Maryland Historical Society  
+MHS | Massachusetts Historical Society  
+MA | Moravian Archives  
+NARS | National Archives and Records Service  
+NHS | Newport Historical Society  
+NYHS | New York Historical Society  
+NYPL | New York Public Library  
+NYU | New York University  
+ODHS | Old Dartmouth Historical Society  
+PM | Peabody Museum  
+HSP | Historical Society of Pennsylvania  
+FHLSC | Friends Historical Library, Swarthmore College  
+SHSW | State Historical Society of Wisconsin  
+YUBL | Yale University, Beinecke Rare Book and Manuscript Library  
+YUL | Yale University Library
