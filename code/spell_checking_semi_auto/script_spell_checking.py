@@ -209,6 +209,4 @@ if __name__ == "__main__":
 
     interactive_spellcheck(args.file, args.mode)
     
-# python script_spell_checking.py "../docs/clean_results/md's/r_201-560_no_img_no_links_formated_links_no_arch.md" --mode paragraph
-    
-    
+# python script_spell_checking.py "example.md" --mode paragraph
