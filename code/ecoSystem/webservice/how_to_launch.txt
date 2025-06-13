@@ -1,0 +1,2 @@
+1. Запустите скрипт search_engine.py
+2. Запустите index.html (Например, используя Live Server)
